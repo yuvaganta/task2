@@ -2,12 +2,13 @@ body{
     background-image:url("/imagestask2/bg.jpg");
     background-size:cover;
     font-family:'Trebuchet MS';
+    align-items:center;
 }
 .request{
     margin-left: 802px;
-    background-color: rgba(128, 128, 128,0.75);
+    background-color:rgba(57,72,76,0.53);
     color: white;
-    margin-right:300px ;
+    margin-right:242px ;
 
 }
 .requestitem::after{
@@ -21,32 +22,49 @@ body{
 .navigationbar{
     display:flex;
     margin-top:44px;
-    margin-left: 245px;
-    margin-right: 300px;
+    margin-left: 303px;
+    margin-right: 242px;
     background-color:rgb(45,50,64);
     height:70px;
+    border: 4px double rgba(128, 128, 128, 0.4);
+    border-spacing: 10px;
     align-items:center;
-
 }
 .navigationbar > div{
     padding-left:15px;
     color:skyblue;
     padding-right:2px;
+    font-size:18px;
+    line-height:1.1;
 }
 .navitem::after{
     content: '|';
     padding-left: 20px;
 }
+.navitem:hover{
+    background-color:skyblue;
+    color:white;
+    border-radius: 5px;
+}
+#navitem5:hover{
+    background-color:skyblue;
+    color:white;
+    border-radius: 5px;
+}
+#navitem3{
+    text-decoration:none;
+    color:skyblue;
+}
 h1{
-    margin-left: 245px;
-    margin-right: 300px;
+    margin-left: 303px;
+    margin-right: 242px;
     margin-top: 0;
     margin-bottom: 0;
     padding-top:39px;
     padding-bottom:20px;
     padding-left: 15px;
     font-weight:lighter;
-    font-size:50px;
+    font-size:45px;
     color: white;
     font-family:'Trebuchet MS';
     line-height:1.1;
@@ -55,23 +73,30 @@ h1{
 }
 .about{
     display: flex;
-    margin-left: 245px;
-    margin-right: 300px;
-    background-color:rgb(45,50,64,0.85);
+    margin-left: 303px;
+    margin-right: 242px;
+    background-color:rgba(25, 27, 44, 0.9);
+        border: 4px double rgba(128, 128, 128, 0.4);
 
 }
 .about > div{
     color:white;
     width:260px;
-    margin: 26px;
+    margin: 20px;
+    padding-left: 13px;
+    line-height:18px;
 } 
-
+#c1, #c2,#c3{
+    text-decoration: underline;
+    padding-bottom: 2px;
+    color: rgb(154,190,205);
+}
 .foot{
-    margin-left: 245px;
-    margin-right: 300px;
+    margin-left: 303px;
+    margin-right: 242px;
     border: 1px;
     padding-left: 200px; 
-    background-color:rgb(45,50,64);
+    background-color:rgba(38,47,90,0.6);
     opacity:0.78;
     margin-top: 20px;
     color:white;
@@ -79,12 +104,11 @@ h1{
     padding-top: 2px;
 }
 .contactus{
-    border-style: none none solid none;
-}
-#contact1{
-    border-bottom: 30px;
+    color:white;
+    text-decoration: underline;
 }
 #contact1::after{
     content: '|';
-    padding-left: 10px;
+    padding-left: 5px;
+    text-decoration: none;
 }
