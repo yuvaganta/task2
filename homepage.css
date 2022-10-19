@@ -5,16 +5,22 @@ body{
     align-items:center;
 }
 .request{
-    margin-left: 802px;
-    background-color:rgba(57,72,76,0.53);
+    margin-left: 882px;
+    background-color:rgb(63,95,145);
     color: white;
-    margin-right:242px ;
+    height:25px;
+    align-items: center;
+    margin-right:206px ;
 
 }
-.requestitem::after{
+.requestitem{
+    padding-left:5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.request .requestitem:not(:last-child)::after{
     content: '|';
-    padding-right:2px;
-    padding-left: 5px;
+    padding-left: 6px;
 }
 .request > span{
     padding-right:2px;
@@ -22,47 +28,51 @@ body{
 .navigationbar{
     display:flex;
     margin-top:44px;
-    margin-left: 303px;
-    margin-right: 242px;
+    margin-left: 290px;
+    margin-right: 206px;
     background-color:rgb(45,50,64);
     height:70px;
-    border: 4px double rgba(128, 128, 128, 0.4);
-    border-spacing: 10px;
+    font-size:20px;
+    border: 7px double rgba(128, 128, 128, 0.2);
     align-items:center;
+    font-weight:lighter;
 }
-.navigationbar > div{
-    padding-left:15px;
+.logo{
+    padding-right: 28px;
+    padding-left:14px;
+}
+.navigationbar > div >a{
+    padding-left:14px;
     color:skyblue;
-    padding-right:2px;
-    font-size:18px;
-    line-height:1.1;
+    padding-right:14px;
 }
-.navitem::after{
+.navigationbar .navitem:not(:last-child)::after{
     content: '|';
-    padding-left: 20px;
-}
-.navitem:hover{
-    background-color:skyblue;
     color:white;
-    border-radius: 5px;
+
 }
-#navitem5:hover{
-    background-color:skyblue;
+.navitema:hover{
+    background-color:rgb(72,104,129);
     color:white;
+    width: inherit;
     border-radius: 5px;
 }
 #navitem3{
     text-decoration:none;
-    color:skyblue;
+}
+#navitem3:hover{
+   
+    background-color:rgb(72,104,129);
+    color:white;
 }
 h1{
-    margin-left: 303px;
-    margin-right: 242px;
+    margin-left: 290px;
+    margin-right: 206px;
     margin-top: 0;
     margin-bottom: 0;
     padding-top:39px;
     padding-bottom:20px;
-    padding-left: 15px;
+    padding-left: 30px;
     font-weight:lighter;
     font-size:45px;
     color: white;
@@ -73,42 +83,46 @@ h1{
 }
 .about{
     display: flex;
-    margin-left: 303px;
-    margin-right: 242px;
+    margin-left: 290px;
+    margin-right: 206px;
+    gap:3px;
     background-color:rgba(25, 27, 44, 0.9);
         border: 4px double rgba(128, 128, 128, 0.4);
 
 }
 .about > div{
     color:white;
-    width:260px;
+    width:265px;
     margin: 20px;
     padding-left: 13px;
-    line-height:18px;
+    line-height:1.42;
+    margin-bottom: 0;
 } 
+.images{
+    height: 150px;
+    width: 290px;
+}
 #c1, #c2,#c3{
     text-decoration: underline;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
     color: rgb(154,190,205);
 }
 .foot{
-    margin-left: 303px;
-    margin-right: 242px;
+    margin-left: 290px;
+    margin-right: 206px;
     border: 1px;
-    padding-left: 200px; 
-    background-color:rgba(38,47,90,0.6);
+    padding-left: 170px; 
+    background-color:rgb(41,65,109);
     opacity:0.78;
     margin-top: 20px;
     color:white;
     height:25px;
     padding-top: 2px;
 }
-.contactus{
-    color:white;
-    text-decoration: underline;
-}
 #contact1::after{
     content: '|';
-    padding-left: 5px;
-    text-decoration: none;
+}
+.contactus > a{
+    text-decoration: underline;
+    padding-right:8px;
 }

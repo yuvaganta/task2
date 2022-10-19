@@ -6,45 +6,59 @@ body{
 }
 
 .request{
-    margin-left: 802px;
-    background-color: rgba(57,72,76,0.53);
+    margin-left: 868px;
+    background-color: rgb(63,95,145);
     color: white;
-    margin-right:285px ;
+    margin-right:218px ;
+    height:25px;
+    align-items: center;
 
 }
-.requestitem::after{
+.requestitem{
+    padding-left:5px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+.request .requestitem:not(:last-child)::after{
     content: '|';
-    padding-right:2px;
-    padding-left: 5px;
+    padding-left: 6px;
 }
 .request > span{
     padding-right:2px;
 }
+
 .navigationbar{
     display:flex;
     margin-top:44px;
-    margin-left: 320px;
-    margin-right:285px;
+    margin-left: 280px;
+    margin-right:217px;
     background-color:rgb(45,50,64);
     height:70px;
-    font-size:18px;
+    font-size:20px;
     border: 7px double rgba(128, 128, 128, 0.2);
     align-items:center;
+    font-weight:lighter;
 
 }
-.navigationbar > div{
-    padding-left:13px;
+.logo{
+    padding-right: 15px;
+    padding-left:5px;
+}
+.navigationbar > div >a {
+    padding-left:16px;
+    padding-right:16px;
     color:skyblue;
 }
-.navitem::after{
+.navigationbar .navitem:not(:last-child)::after{
     content: '|';
-    padding-left: 15px;
-}
-#ourservices{
-    border: 1px solid rgba(188, 218, 231, 0.92);
     color:white;
-    border-radius: 3px;
-    background-color: rgb(72,104,129)
+
+}
+.navitema:hover{
+    background-color:rgb(72,104,129);
+    color:white;
+    width: inherit;
+    border-radius: 5px;
 }
 .services{
     display: flex;
@@ -52,13 +66,13 @@ body{
     padding-left:3px;
     padding-right: 3px;
     border: 7px double rgba(128, 128, 128, 0.2);
-    gap: 30px;
-    margin-left: 320px;
+    gap: 0px;
+    margin-left: 280px;
     margin-right:285px;
     margin-top: 50px;
     padding-bottom: 33px;
-    background-color:rgba(25, 27, 44, 0.85);
-    width: 890px;
+    background-color:rgba(15, 30, 51, 0.92);
+    width: 986px;
 }
 .services > div{
     margin:20px;
@@ -67,62 +81,87 @@ body{
     height:350px;
     display:flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25.2px;
+    padding-top: 5pxS;
     margin-right: 0;
 }
 .leftside > img{
-    margin-top: 22px;
-    height:100px;
+    width:328px;
+    height:139px;
 }
 .leftside > hr {
     width: 270px;
-    margin-top: 22px;
+    
     color:rgba(188, 218, 231, 0.92);
 }
 .lhlinks{
     color:rgba(188, 218, 231, 0.92);
     padding-left:5px;
+    line-height:1.5;
+    padding-top: 13px;
+    padding-bottom: 13px;
     text-decoration: underline;
-    padding: 2px;
+    border-width: 1px 0px 1px 0px;
+    border-style: groove;
+    border-color: rgba(188, 218, 231, 0.92);
 }
 .item2 {
 
     color: white;
     padding-right:20px;
+    line-height:1.45;
+    width:683.76px;
+    margin-left: 0px;
   }
   .item2 > h2{
     color:rgba(188, 218, 231, 0.92);
     font-weight: normal;
+    margin-top: 0;
   }
   .item2links{
     color:rgba(188, 218, 231, 0.92);
     text-decoration: underline;
   }
-  .item5{
+  .helpyou{
     position: relative;
-    top:20px;
+    top:12px;
     padding-top:12px;
-    padding-bottom:12px;
     border-style: groove;
     padding-left:25px;
-    border-width: 2px 0px 2px 0px;
+    border-width: 1px 0px 1px 0px;
+    background-color: rgb(16, 34, 58);
+    border-color: rgba(188, 218, 231, 0.92);
   }
-  button{
-    color:rgba(188, 218, 231, 0.92);
+  .helpyou > div{
+    padding-bottom: 14px;
+  }
+  .someonebutton{
+    padding-top: 18px; 
+  }
+ button{
     background-image: linear-gradient(rgba(20, 113, 206, 0.85),rgba(0, 0, 0, 0.82));
     border: none;
     border-radius: 4px;
-    font-weight:normal;
+    color: rgb(208, 202, 202);
+    height: 30px;
+    font-weight: bold;
   }
   .foot{
-    margin-left: 320px;
-    margin-right:285px;
+    margin-left: 280px;
+    margin-right:217px;
     border: 1px;
     padding-left: 200px; 
-    background-color:rgb(45,50,64);
+    background-color:rgb(41,65,109);
     opacity:0.78;
     margin-top: 20px;
     color:white;
     height:25px;
     padding-top: 2px;
+}
+#contact1::after{
+    content: '|';
+}
+.contactus > a{
+    text-decoration: underline;
+    padding-right:8px;
 }
