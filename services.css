@@ -6,10 +6,10 @@ body{
 }
 
 .request{
-    margin-left: 868px;
+    margin-left: 857px;
     background-color: rgb(63,95,145);
     color: white;
-    margin-right:218px ;
+    margin-right:229px ;
     height:25px;
     align-items: center;
 
@@ -31,22 +31,33 @@ body{
     display:flex;
     margin-top:44px;
     margin-left: 280px;
-    margin-right:217px;
+    position: relative;
+    margin-right:229px;
     background-color:rgb(45,50,64);
     height:70px;
     font-size:20px;
-    border: 7px double rgba(128, 128, 128, 0.2);
     align-items:center;
     font-weight:lighter;
 
+}
+.navigationbar::after{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    content:'';
+    position:absolute;
+    top:4px;
+    bottom:4px;
+    right: 4px;
+    left: 4px;
+}
+.navitem{
+    z-index:10;
 }
 .logo{
     padding-right: 15px;
     padding-left:5px;
 }
 .navigationbar > div >a {
-    padding-left:16px;
-    padding-right:16px;
+    padding:8px 15px;
     color:skyblue;
 }
 .navigationbar .navitem:not(:last-child)::after{
@@ -60,13 +71,20 @@ body{
     width: inherit;
     border-radius: 5px;
 }
+#ourservices {
+    text-decoration: none;
+}
+ #home{
+    text-decoration: none;
+}
+
 .services{
     display: flex;
     height:595px;
     padding-left:3px;
     padding-right: 3px;
-    border: 7px double rgba(128, 128, 128, 0.2);
     gap: 0px;
+    position: relative;
     margin-left: 280px;
     margin-right:285px;
     margin-top: 50px;
@@ -77,12 +95,21 @@ body{
 .services > div{
     margin:20px;
 }
+.services::after{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    content: '';
+    position:absolute;
+    top:5px;
+    bottom:5px;
+    right: 5px;
+    left: 5px;
+}
 .leftside{
     height:350px;
     display:flex;
     flex-direction: column;
     gap: 25.2px;
-    padding-top: 5pxS;
+    padding-top: 5px;
     margin-right: 0;
 }
 .leftside > img{
@@ -148,7 +175,7 @@ body{
   }
   .foot{
     margin-left: 280px;
-    margin-right:217px;
+    margin-right:229px;
     border: 1px;
     padding-left: 200px; 
     background-color:rgb(41,65,109);
